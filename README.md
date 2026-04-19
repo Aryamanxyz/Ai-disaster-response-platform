@@ -39,26 +39,93 @@ A real-time AI-powered disaster response platform built for India's emergency ma
 - NewsAPI (Disaster News Feed)
 
 ## 📁 Project Structure
-Disaster-Management-Project/
-├── client/                 # React Frontend
-│   ├── src/
-│   │   ├── pages/          # All page components
-│   │   ├── components/     # Reusable components
-│   │   ├── context/        # React Context (Auth, Socket, Disaster)
-│   │   └── api/            # Axios instance
-├── server/                 # Node.js Backend
-│   ├── controllers/        # Route controllers
-│   ├── models/             # MongoDB models
-│   ├── routes/             # API routes
-│   ├── services/           # Business logic (Groq, Twilio, News, ML)
-│   ├── middleware/         # Auth middleware
-│   └── config/             # DB and service configs
-└── ml-model/               # Python Flask ML Service
-├── app.py              # Flask API
-├── train_model.py      # Model training script
-├── model.pkl           # Trained model (gitignored)
-└── label_encoder.pkl   # Label encoder (gitignored)
+Haan Express use kiya hai! 😄 app.js mein const express = require('express') — poora backend Express pe hi hai.
 
+README.md ke liye Clean Project Structure
+# 🚨 AI Disaster Response Coordination Platform
+
+## Tech Stack
+- **Frontend:** React 18 + Vite
+- **Backend:** Node.js + Express.js
+- **Database:** MongoDB Atlas
+- **Cache:** Redis
+- **Real-time:** Socket.io
+- **AI:** Google Gemini API
+- **Map:** Leaflet.js
+
+## Project Structure
+ai-disaster-response/
+│
+├── client/                          # React 18 Frontend
+│   ├── public/
+│   └── src/
+│       ├── api/
+│       │   └── axiosInstance.js
+│       ├── components/
+│       │   ├── ai/
+│       │   ├── common/
+│       │   │   ├── Navbar.jsx
+│       │   │   ├── Sidebar.jsx
+│       │   │   └── ProtectedRoute.jsx
+│       │   ├── incidents/
+│       │   ├── map/
+│       │   │   └── DisasterMap.jsx
+│       │   ├── notifications/
+│       │   └── resources/
+│       ├── context/
+│       │   ├── AuthContext.jsx
+│       │   ├── DisasterContext.jsx
+│       │   └── SocketContext.jsx
+│       ├── hooks/
+│       ├── pages/
+│       │   ├── AIAssistantPage.jsx
+│       │   ├── Dashboard.jsx
+│       │   ├── IncidentsPage.jsx
+│       │   ├── LoginPage.jsx
+│       │   ├── RegisterPage.jsx
+│       │   ├── ReportsPage.jsx
+│       │   └── ResourcesPage.jsx
+│       ├── store/
+│       ├── utils/
+│       ├── App.jsx
+│       └── main.jsx
+│
+└── server/                          # Node.js + Express Backend
+├── config/
+│   ├── db.js
+│   ├── gemini.js
+│   └── redis.js
+├── controllers/
+│   ├── aiController.js
+│   ├── alertController.js
+│   ├── authController.js
+│   ├── incidentController.js
+│   └── resourceController.js
+├── middleware/
+│   ├── authMiddleware.js
+│   ├── errorHandler.js
+│   └── rateLimiter.js
+├── models/
+│   ├── Alert.js
+│   ├── Incident.js
+│   ├── Resource.js
+│   └── User.js
+├── routes/
+│   ├── aiRoutes.js
+│   ├── alertRoutes.js
+│   ├── authRoutes.js
+│   ├── incidentRoutes.js
+│   └── resourceRoutes.js
+├── services/
+│   ├── cacheService.js
+│   ├── geminiService.js
+│   └── notificationService.js
+├── sockets/
+│   └── socketHandler.js
+├── utils/
+│   └── generateToken.js
+├── app.js
+└── server.js
 ## 🚀 Getting Started
 
 ### Prerequisites
