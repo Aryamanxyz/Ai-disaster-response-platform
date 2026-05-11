@@ -38,8 +38,7 @@ A real-time AI-powered disaster response platform built for India's emergency ma
 - Twilio (SMS Alerts)
 - NewsAPI (Disaster News Feed)
 
-## 📁 Project Structure
-Haan Express use kiya hai! 😄 app.js mein const express = require('express') — poora backend Express pe hi hai.
+
 
 README.md ke liye Clean Project Structure
 # 🚨 AI Disaster Response Coordination Platform
