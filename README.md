@@ -260,6 +260,11 @@ Registration: RA2311003030195
 BTech CSE Core
 SRM Institute of Science and Technology
 
+**Barbie Mathur**
+Registration: RA2311003030243
+BTech CSE Core
+SRM Institute of Science and Technology
+
 ## 📄 License
 
 MIT License — Free to use and modify
