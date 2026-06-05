@@ -48,7 +48,7 @@ const LoginPage = () => {
               value={formData.email}
               onChange={handleChange}
               style={styles.input}
-              placeholder="apna email daalo"
+              placeholder="Enter Your Email"
               required
             />
           </div>
@@ -61,7 +61,7 @@ const LoginPage = () => {
               value={formData.password}
               onChange={handleChange}
               style={styles.input}
-              placeholder="password daalo"
+              placeholder="Enter your password"
               required
             />
           </div>
@@ -73,7 +73,7 @@ const LoginPage = () => {
 
         <p style={styles.link}>
           Account nahi hai?{' '}
-          <Link to="/register" style={styles.linkText}>Register karo</Link>
+          <Link to="/register" style={styles.linkText}>Please Register</Link>
         </p>
       </div>
     </div>
