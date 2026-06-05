@@ -59,7 +59,7 @@ const RegisterPage = () => {
               value={formData.name}
               onChange={handleChange}
               style={styles.input}
-              placeholder="Apna naam daalo"
+              placeholder="Enter Your name"
               required
             />
           </div>
@@ -72,7 +72,7 @@ const RegisterPage = () => {
               value={formData.email}
               onChange={handleChange}
               style={styles.input}
-              placeholder="Email daalo"
+              placeholder="Enter your email"
               required
             />
           </div>
@@ -85,7 +85,7 @@ const RegisterPage = () => {
               value={formData.password}
               onChange={handleChange}
               style={styles.input}
-              placeholder="Password daalo"
+              placeholder="Enter your password"
               required
             />
           </div>
@@ -150,7 +150,7 @@ const RegisterPage = () => {
 
         <p style={styles.link}>
           Pehle se account hai?{' '}
-          <Link to="/login" style={styles.linkText}>Login karo</Link>
+          <Link to="/login" style={styles.linkText}>Please Login</Link>
         </p>
       </div>
     </div>
