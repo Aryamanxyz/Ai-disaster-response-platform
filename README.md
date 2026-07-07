@@ -40,8 +40,8 @@ A real-time AI-powered disaster response platform built for India's emergency ma
 
 
 
-README.md ke liye Clean Project Structure
-# 🚨 AI Disaster Response Coordination Platform
+
+
 
 ## Tech Stack
 - **Frontend:** React 18 + Vite
